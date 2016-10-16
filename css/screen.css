@@ -1,21 +1,18 @@
 
-/*Change the CSS box model*/
-html *{
-        box-sizing: border-box;
+.menu {
+    height: 96px;
+    position: absolute;
+    width: 160px;
 }
 
-*:before, *:after{
-    box-sizing: border-box;
+* {
+    font-size: 23px;
 }
 
-p{
-    background-color: aqua;
-    padding: 12px;
-    border: 5px dotted #000000;
-    margin: 100px;
-    width: 400px;
+#content {
+    position: relative;
 }
-
-body{
-    font-size: 24px;
+.menu {
+    background-position: right top;
+    padding: 30px;
 }
