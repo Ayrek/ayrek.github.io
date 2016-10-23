@@ -1,18 +1,161 @@
+@media screen and (min-width:800px) {}
 
-.menu {
-    height: 96px;
-    position: absolute;
-    width: 160px;
+#menu {
+    float: right;
 }
 
-* {
-    font-size: 23px;
+#webLogo {
+    width: 50%;
+    margin: 1em;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
 }
 
-#content {
+#logo {
+    width: 6em;
+    height: 6em;
+    /*    left: 0px;*/
+    /*    right: 30%;*/
+    /*    margin-top: 0px;*/
+    /*    margin-left: -25px;*/
+}
+
+
+nav {
+    clear: both;
+    /*    text-align: center;*/
+    /*    margin: 1em;*/
+    font-size: 16px;
+        text-align-last: justify;
+}
+
+header h2 {
+    clear: both;
+    text-align: center;
+    background-color: cornflowerblue;
+    margin: 1em 0em;
+}
+
+.monday {
+    padding-top: 3px;
+    padding-left: 2px;
+}
+
+.monday img {
+   float: right;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.monday figure {
+/*    position: absolute;*/
+}
+
+body {
+    margin: 10% 10%;
+}
+
+.tuesday {
+    padding-top: 2em;
+    padding-left: 2px;
+}
+p, h3 {
+    margin: 0;
+}
+
+#sunny {
+   float: right;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    top: 10em;
+    clear: both;
+}
+
+.hourly {
+    text-align: center;
+    background-color: darkgrey;
+    border-right-width: 10px;
+    border-style: solid;
+    border-width: 1px;
+    width: 115px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 3em;
+    padding: 0;
+    clear: right
+}
+
+hr {
+    display: block;
     position: relative;
+    padding: 0;
+    margin: 8px 0;
+    height: 0;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 0;
+    clear: both;
+    border: 1px solid black;
 }
-.menu {
-    background-position: right top;
-    padding: 30px;
+
+.wednesday {
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.wednesday img {
+    float: right;
+    top: 71%;
+    right: 7%;
+    z-index: -5;
+}
+
+.extended,
+.monthly {
+    text-align: center;
+    border-style: solid;
+    padding: 3px;
+    margin-bottom: 8px;
+    background-color: darkgray;
+    width: 99%;
+}
+
+.closing {
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    width: 100%;
+    border-style: solid;
+    height: 19px;
+}
+
+.monday,
+.tuesday,
+.wednesday {
+    font-size: 16px;
+}
+
+.monday,
+.tuesday,
+.wednesday div {
+    margin: 1em;
+}
+
+#wireframe {
+    width: 300px;
+}
+.hourly-data{
+    display: none;
+}
+
+@media screen and (min-width:801px)
+{
+    .hourly-data{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1600px)
+{
+
 }

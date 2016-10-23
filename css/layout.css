@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 20px;
+    color: #000;
+    background: #fff;
+    font-size: 24px;
+}
+
+.img-left {
+    float: left;
+    max-width: 20%;
+    vertical-align: bottom;
+}
+
+.img-right {
+    float: right;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    max-width: 150%;
+}
+.banner{
+    height: 5%;
+}
+
+
+/* -----------------------------------
+base layout
+----------------------------------- */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.day, .location {
+    clear: both;
+    overflow: hidden;
+}
+
+.hourly {
+    margin-top: 1em;
+    clear: both;
+}
+.location{
+    text-align: center;
+    background-color: cornflowerblue;
+    border-style: solid;
+    margin-bottom: .2em;
+    margin-top: 6em;
+
+}
+
+.sunny{
+    float: right;
+    margin-bottom: 1em;
+}
+h3{
+/*    float: left;*/
+    position: absolute;
+}
+p{
+    position: absolute;
+/*    clear: both;*/
+    margin-top: 0;
+}
+
+.tuesday h3 {
+    text-align: center;
+    width: auto;
+
+}
+/* -----------------------------------
+Small
+----------------------------------- */
+
+.hourly {
+    overflow: hidden;
+    background-color: #ccc;
+}
+.monday, .tuesday, .wednesday{
+    margin: 1em;
+}
+
+
+/* -----------------------------------
+Medium
+----------------------------------- */
+
+@media (min-width:500px) and (max-width:1600px) {
+    .col {
+        float: left;
+        margin-right: 4%;
+        background-color: lime;
+    }
+
+    }
+    .col:nth-child(2) {
+        margin-right: 0;
+    }
+    .hourly {
+        overflow: hidden;
+        margin-bottom: .2em;
+        background-color: #ccc;
+        display: inherit;
+        text-align: center;
+    }
+
+}
+
+
+/* -----------------------------------
+Large
+----------------------------------- */
+
+@media (min-width:45em) {
+    .col {
+        float: left;
+        margin-right: 2%;
+        background-color: orange;
+    }
+    .w-4col {
+        width: 100%;
+    }
+    .w-3col {
+        width: 74.5%;
+    }
+    .w-2col {
+        width: 49%;
+    }
+    .w-1col {
+        width: 23.5%;
+    }
+}
