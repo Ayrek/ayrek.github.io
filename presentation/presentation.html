@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang='en-us'>
+
+<head>
+    <meta charset="utf-8">
+    <title>Absolute Positioning</title>
+    <link rel="stylesheet" href="presentation.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>Absolute Positioning</h1>
+
+    </header>
+
+    <main>
+
+        <section>
+            <p>There are seven important points of the absolute position type:</p>
+            <ul>
+                <li>Lets you place any page element wherever you want.</li>
+                <li>The value is relative to the positioned parent element not the viewport.</li>
+                <li>And if there isnt a positioned parent element then the defeault is the html page. This could cause scrolling with the page.</li>
+                <li>The element is removed from the flow on the page.</li>
+                <li>Not affected by other elements.</li>
+                <li>Other elements are not affected by the element</li>
+                <li>Potentially this could limit the flexibility of the web page.</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2>Example 1: Element with positioned parent</h2>
+            <div id="relative_parent"><p>Parent: Relative</p>
+            <div id="child"><p>Child: Absolute (Example 1)</p>
+            </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Example 2: Element without positioned parent</h2>
+            <div id="parent"><p>Parent: None</p>
+                <div id="child"><p>Child: Absolute (Example 2)</p>
+                </div>
+            </div>
+            <p>Do you see the difference? The example 2 orange box has a relative value to the web page. That is why it is in such a weird place. This is because the parent box is not set to any position. Unlike the blue box from example 1. It is relative,so the orange example 1 box's value is relative to its parent element.</p>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li>&copy;2016</li>
+            <li>By: Eric Keller</li>
+        </ul>
+    </footer>
+
+
+
+
+</body>
+
+</html>

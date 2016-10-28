@@ -1,0 +1,25 @@
+body{
+    margin: 40px;
+}
+#relative_parent{
+    position: relative;
+    background-color: skyblue;
+    height: 350px;
+    width: 600px;
+
+}
+#parent{
+    background-color: skyblue;
+    height: 350px;
+    width: 600px;
+
+}
+
+#child{
+    position: absolute;
+    background-color: darkorange;
+    width: 200px;
+    height: 150px;
+    top: 220px;
+    right: 100px;
+}
