@@ -16,8 +16,8 @@
 
     <main>
 
-        <section>
-            <p>There are seven important points of the absolute position type:</p>
+        <section id="important">
+            <h2>There are seven important points of the absolute position type:</h2>
             <ul>
                 <li>Lets you place any page element wherever you want.</li>
                 <li>The value is relative to the positioned parent element not the viewport.</li>
@@ -30,18 +30,22 @@
 
         </section>
 
-        <section>
+        <section id="example_1">
             <h2>Example 1: Element with positioned parent</h2>
-            <div id="relative_parent"><p>Parent: Relative</p>
-            <div id="child"><p>Child: Absolute (Example 1)</p>
-            </div>
+            <div id="relative_parent">
+                <p>Parent: Relative</p>
+                <div id="child1">
+                    <p>Child: Absolute (Example 1)</p>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section id="example_2">
             <h2>Example 2: Element without positioned parent</h2>
-            <div id="parent"><p>Parent: None</p>
-                <div id="child"><p>Child: Absolute (Example 2)</p>
+            <div id="parent">
+                <p>Parent: None</p>
+                <div id="child2">
+                    <p>Child: Absolute (Example 2)</p>
                 </div>
             </div>
             <p>Do you see the difference? The example 2 orange box has a relative value to the web page. That is why it is in such a weird place. This is because the parent box is not set to any position. Unlike the blue box from example 1. It is relative,so the orange example 1 box's value is relative to its parent element.</p>

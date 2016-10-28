@@ -15,7 +15,7 @@ body{
 
 }
 
-#child{
+#child1, #child2{
     position: absolute;
     background-color: darkorange;
     width: 200px;
