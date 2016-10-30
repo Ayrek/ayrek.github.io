@@ -2,8 +2,35 @@ html * {
     box-sizing: border-box;
 }
 
+#wrappper{
+    display: flex;
+    flex-wrap: wrap;
+/*    flex-direction: column;*/
+}
+#page-header{
+}
+
+#row{
+    display: flex;
+}
+#page-nav{
+    width: 20;
+}
+#page-aside{
+    width: 20%
+}
+main{
+    width:50%;
+}
+#page-footer{
+    width: 100%
+}
+
+#page-nav, main, #page-aside{
+    border: 1px solid #000;}
+/*
 *:before,
-*:after {
+/*:after {
     box-sizing: border-box;
 }
 
@@ -35,3 +62,4 @@ main {
 #page-footer {
     clear: left;
 }
+*/
