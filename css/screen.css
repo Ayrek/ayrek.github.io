@@ -1,609 +1,363 @@
-    body {
-    margin: 40px;
-}
+        body {
+        margin: 40px;
+    }
+    /***********HEADER************/
 
-
-/***********HEADER************/
-
-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-#menu_figure {
-    margin: auto 0;
-    flex-basis: 43%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#icon_figure {
-    order: -3;
-    margin: auto 0;
-    flex-basis: 39%;
-}
-
-#search {
-    display: none;
-}
-
-#menu {
-    margin-right: 0;
-    height: 40px;
-    width: 50px;
-}
-
-.icon {
-    width: 100px;
-    height: 100px;
-    /*    margin-left: 0;;*/
-    /*    margin-right: 50px;*/
-}
-
-nav {
-    align-self: center;
-    width: 500px;
-    margin: 15px 0;
-    background-color: cornflowerblue;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    text-emphasis-color: black;
-    padding-top: 15px;
-    padding-bottom: 0;
-    font-size: 1.5em;
-}
-
-nav a {
-    background-color: cornflowerblue;
-    height: 50px;
-}
-
-#location {
-    text-align: center;
-    margin: 5% 25%;
-    width: 250px;
-    height: 50px;
-    background-color: gainsboro;
-    border-color: dimgray;
-    border-style: solid;
-}
-
-
-/**********MONDAY-TUESDAY-WEDNESDAY****************/
-
-.row_1,
-.row_2,
-.row_3,
-.row_4 {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-#monday,
-#tuesday,
-#wednesday,
-#thursday {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    background-color: #D9D9D9;
-}
-section>div>ul{
-    list-style-type: none;
-    padding: 0;
-    margin-top:  0;
-}
-#figure_sunny {
-    display: flex;
-    justify-content: center;
-}
-
-#sunny {
-    width: 210px;
-    align-self: center;
-}
-
-.summary {
-    align-self: center;
-}
-
-.hourly {
-    background-color: #465C8B;
-    margin-bottom: 20px;
-    padding: auto 5px;
-}
-
-section>h3 {
-    text-align: center;
-    background-color: #F7882F;
-    margin-bottom: 0;
-}
-
-section ol {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    overflow: scroll;
-    align-items: center;
-}
-
-section ol li {
-    padding: 10px;
-    text-align: center;
-}
-
-.extended,
-.monthly {
-    text-align: center;
-    border-style: solid;
-    padding: 3px;
-    margin-bottom: 8px;
-    background-color: darkgray;
-    width: 99%;
-}
-
-.closing {
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
-    width: 100%;
-    border-style: solid;
-    height: 19px;
-}
-
-#wireframe {
-    width: 300px;
-}
-#indicator{
-    display: none;
-}
-
-.figure_radar{
-    display: none;
-}
-.row_4{
-    display: none;
-}
-/*******MEDIA QUERIES*******/
-@media screen and (min-width:850px) {
     header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    #menu_figure {
+        margin: auto 0;
+        flex-basis: 43%;
+        display: flex;
+        justify-content: flex-end;
         align-items: center;
     }
-    nav {
-        flex-basis: 100%;
+
+    #icon_figure {
+        order: -3;
+        margin: auto 0;
+        flex-basis: 39%;
     }
-    .row_1,
-    .row_2,
-    .row_3, .row_4 {
-        flex-direction: row;
-    }
+
     #search {
+        display: none;
+    }
+
+    #menu {
+        margin-right: 0;
+        height: 40px;
+        width: 50px;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        /*    margin-left: 0;;*/
+        /*    margin-right: 50px;*/
+    }
+
+    nav {
+        align-self: center;
+        width: 500px;
+        margin: 15px 0;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-emphasis-color: black;
+        padding-top: 15px;
+        padding-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    nav a {
+        background-color: cornflowerblue;
+        height: 50px;
+    }
+
+    #location {
         text-align: center;
-        font-size: 2em;
-        display: inline-flex;
-        flex-basis: 29%;
+        margin: 5% 25%;
+        width: 250px;
         height: 50px;
         background-color: gainsboro;
-        border-style: solid;
         border-color: dimgray;
+        border-style: solid;
     }
-    #icon_figure {
-        flex-basis: 35%;
+    /**********MONDAY-TUESDAY-WEDNESDAY****************/
+
+    .row_1,
+    .row_2,
+    .row_3,
+    .row_4 {
+        display: flex;
+        flex-flow: column wrap;
     }
-    #menu_figure {
-        flex-basis: 35%;
-    }
+
     #monday,
     #tuesday,
     #wednesday,
     #thursday {
-        /*        margin-right: 200px;*/
-        flex-basis: 45%
-    }
-    #figure_sunny {
         display: flex;
-        flex-basis: 44%;
-        justify-content: center;
-    }
-    .hourly {
-        order: 2;
-        margin-right: 10px;
-    }
-    section>h3 {
-        flex-basis: 45%;
-    }
-    .summary {
-        order: 1;
-        flex-basis: 53%;
+        flex-direction: column;
         text-align: center;
+        background-color: #D9D9D9;
     }
-    #location {
+
+    section>div>ul {
+        list-style-type: none;
+        padding: 0;
         margin-top: 0;
     }
-}
 
-@media screen and (min-width: 1250px) {
-    main {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .row_1 {
-        width: 50%;
-    }
-    .summary {
-        flex-basis: 49%
-    }
-    header {
-        justify-content: space-between;
-    }
-    .icon {
-        width: 150px;
-        height: 150px;
-    }
-    #icon_figure {
-        flex-basis: 10%;
-    }
-    #menu_figure {
-        flex-basis: 10%;
-        margin-right: 20px;
-    }
-    #search {
-        flex-basis: 22%;
-        margin: auto 25px;
-    }
-    #location {
-        order: -1;
-        flex-basis: 22%;
-        margin: auto 0;
-    }
-    /************MONDAY**************/
-    #monday {
-        flex-basis: 50%;
-    }
-    .row_1 {
-        flex-basis: 60%;
-    }
     #figure_sunny {
-        flex-basis: 38%;
-    }
-    .summary {
-        flex-basis: 47%;
-    }
-    #indicator {
-        flex-basis: 20%;
-    }
-    #hourly_title{
-        order: 0;
-        flex-basis: 50%;
-    }
-    /*********OUTDOOR INDICATOR***************/
-    #indicator {
-        display: inline-block;
-        text-align: center;
-        flex-basis: 40%;
-        background-color: #F7882F;
-        height: 418px;
-
-    }
-    #indicator h1{
-        font-size: 2em;
-    }
-    #indicator p{
-        width:300px;
-        font-size: 3.75em;
-        border-style: dashed;
-        margin: 100px auto;
-
-    }
-    /**********TUESDAY WEDNESDAY THURSDAY*********/
-    #tuesday, #wednesday, #thursday{
-        flex-basis: 80%;
-    }
-    .row_4{
         display: flex;
+        justify-content: center;
     }
-    .row_2,
-    .row_3, .row_4 {
-        width: 20%;
+
+    #sunny {
+        width: 210px;
+        align-self: center;
     }
-    .hourly{
-        order: 5;
-        flex-basis: 100%;
+
+    .summary {
+        align-self: center;
+    }
+
+    .hourly {
+        background-color: #465C8B;
+        margin-bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     section>h3 {
-        order: 4;
-        flex-basis: 80%;
-
-    }
-    #secondary_sum{
-        order: 3;
-        flex-basis: 80%;
-    }
-    #second_hours{
-        flex-basis: 80%;
-        margin-right: 30px;
+        text-align: center;
+        background-color: #F7882F;
+        margin-bottom: 0;
     }
 
-    .row_2>figure, .row_3>figure, .row_4>figure{
-        margin: auto 40px;
-    }
-    /***********RADAR***************/
-    .figure_radar{
-        margin top: 20px;
-        margin-left: 1%;
-        margin-right: 0;
-        height: 580px;
+    section ol {
+        list-style-type: none;
         display: flex;
+        margin: 0;
+        padding: 0;
+        overflow: scroll;
+        align-items: center;
     }
-    .radar{
-        margin-top: 50px;
-        width: 450px;
-        height: 300px;
+
+    section ol li {
+        padding: 10px;
+        text-align: center;
     }
-    /**********Bottom********/
-    .extended, .monthly, .closing{
+
+    .extended,
+    .monthly {
+        text-align: center;
+        border-style: solid;
+        padding: 3px;
+        margin-bottom: 8px;
+        background-color: darkgray;
+        width: 99%;
+    }
+
+    .closing {
+        background-color: cornflowerblue;
+        border-color: cornflowerblue;
+        width: 100%;
+        border-style: solid;
+        height: 19px;
+    }
+
+    #wireframe {
+        width: 300px;
+    }
+
+    #indicator {
         display: none;
     }
-    footer{
-        border-style: solid;
-        border-top-color: cornflowerblue;
-        border-bottom-color: white;
-        border-right-color: white;
-        border-left-color: white;
+
+    .figure_radar {
+        display: none;
     }
 
-
-
-
-
-
-    /*
-.row{
-    display: flex;
-    flex-flow: column wrap;
-}
-#monday{
-
-}
-section ol{
-    list-style-type: none;
-    display: flex;
-    margin:0;
-    padding:0;
-    overflow: scroll;
-    align-items: center;
-    justify-content: space-between;
-}
-*/
-    /*Header*/
-    /*
-header{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
-}
-#navigation{
-    margin-top: 50px;
-    margin-left:  15%;
-    margin-right: 15%;
-}
-
-header h1{
-    width: 10px;
-}
-
-.icon{
-    width:6em;
-    height:6em;
-}
-
-header figure{
-    justify-content: space-between;
-    width: 100px;;
-    background-color: darksalmon;
-
-}
-#menu{
-   width: 35px;
-    height: 35px;
-    margin: 5px 20%;
-    background-color: darksalmon;
-    float: right;
-
-}
-*/
-    /*Monday Section*/
-    /*
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-#monday{
-    display: flex;
-    flex-direction: column;
-    background-color: aqua;
-    text-align: center;
-    background-color: gray;
-
-}
-#sunny{
-   width: 210px;
-    align-self: center;
-}
-.hourly{
-    background-color: darkcyan;
-}
-section>h3{
-    text-align: center;
-    background-color: crimson;
-}
-
-section ol{
-    list-style-type: none;
-    display: flex;
-    margin:0;
-    padding:0;
-    overflow: scroll;
-    align-items: center;
-}
-
-section ol li{
-    padding: 10px;
-    text-align: center;
-}
-*/
-    /*
-#menu {
-    float: right;
-}
-
-#webLogo {
-    width: 50%;
-    margin: 1em;
-    margin-top: 0px;
-    margin-left: 0px;
-    float: left;
-}
-
-#logo {
-    width: 6em;
-    height: 6em;
-}
-
-
-nav {
-    clear: both;
-    font-size: 16px;
-        text-align-last: justify;
-}
-
-header h2 {
-    clear: both;
-    text-align: center;
-    background-color: cornflowerblue;
-    margin: 1em 0em;
-}
-
-.monday {
-    padding-top: 3px;
-    padding-left: 2px;
-}
-
-.monday img {
-   float: right;
-    margin-top: 0;
-    margin-bottom: 1.5em;
-}
-
-body {
-    margin: 10% 10%;
-}
-
-.tuesday {
-    padding-top: 2em;
-    padding-left: 2px;
-}
-p, h3 {
-    margin: 0;
-}
-
-#sunny {
-   float: right;
-    margin-top: 0;
-    margin-bottom: 1.5em;
-    top: 10em;
-    clear: both;
-}
-
-.hourly {
-    text-align: center;
-    background-color: darkgrey;
-    border-right-width: 10px;
-    border-style: solid;
-    border-width: 1px;
-    width: 115px;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 3em;
-    padding: 0;
-    clear: right
-}
-
-hr {
-    display: block;
-    position: relative;
-    padding: 0;
-    margin: 8px 0;
-    height: 0;
-    max-height: 0;
-    font-size: 1px;
-    line-height: 0;
-    clear: both;
-    border: 1px solid black;
-}
-
-.wednesday {
-    padding-top: 5px;
-    padding-left: 2px;
-}
-
-.wednesday img {
-    float: right;
-    top: 71%;
-    right: 7%;
-    z-index: -5;
-}
-
-.extended,
-.monthly {
-    text-align: center;
-    border-style: solid;
-    padding: 3px;
-    margin-bottom: 8px;
-    background-color: darkgray;
-    width: 99%;
-}
-
-.closing {
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
-    width: 100%;
-    border-style: solid;
-    height: 19px;
-}
-
-.monday,
-.tuesday,
-.wednesday {
-    font-size: 16px;
-}
-
-.monday,
-.tuesday,
-.wednesday div {
-    margin: 1em;
-}
-
-#wireframe {
-    width: 300px;
-}
-.hourly-data{
-    display: none;
-}
-
-@media screen and (min-width:801px)
-{
-    .hourly-data{
-        display: block;
+    .row_4 {
+        display: none;
     }
+    /*******MEDIA QUERIES*******/
+
+    @media screen and (min-width:850px) {
+        header {
+            align-items: center;
+        }
+        nav {
+            flex-basis: 100%;
+        }
+        .row_1,
+        .row_2,
+        .row_3,
+        .row_4 {
+            flex-direction: row;
+        }
+        #search {
+            text-align: center;
+            font-size: 2em;
+            display: inline-flex;
+            flex-basis: 29%;
+            height: 50px;
+            background-color: gainsboro;
+            border-style: solid;
+            border-color: dimgray;
+        }
+        #icon_figure {
+            flex-basis: 35%;
+        }
+        #menu_figure {
+            flex-basis: 35%;
+        }
+        #monday,
+        #tuesday,
+        #wednesday,
+        #thursday {
+            /*        margin-right: 200px;*/
+            flex-basis: 45%
+        }
+        #figure_sunny {
+            display: flex;
+            flex-basis: 44%;
+            justify-content: center;
+        }
+        .hourly {
+            order: 2;
+            margin-right: 10px;
+        }
+        section>h3 {
+            flex-basis: 45%;
+        }
+        .summary {
+            order: 1;
+            flex-basis: 53%;
+            text-align: center;
+        }
+        #location {
+            margin-top: 0;
+        }
+    }
+
+    @media screen and (min-width: 1250px) {
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row_1 {
+            width: 50%;
+        }
+        .summary {
+            flex-basis: 49%
+        }
+        header {
+            justify-content: space-between;
+        }
+        .icon {
+            width: 150px;
+            height: 150px;
+        }
+        #icon_figure {
+            flex-basis: 10%;
+        }
+        #menu_figure {
+            flex-basis: 10%;
+            margin-right: 20px;
+        }
+        #search {
+            flex-basis: 22%;
+            margin: auto 25px;
+        }
+        #location {
+            order: -1;
+            flex-basis: 22%;
+            margin: auto 0;
+        }
+        /************MONDAY**************/
+        #monday {
+            flex-basis: 50%;
+        }
+        .row_1 {
+            flex-basis: 60%;
+        }
+        #figure_sunny {
+            flex-basis: 38%;
+        }
+        .summary {
+            flex-basis: 47%;
+        }
+        #indicator {
+            flex-basis: 20%;
+        }
+        #hourly_title {
+            order: 0;
+            flex-basis: 50%;
+        }
+        /*********OUTDOOR INDICATOR***************/
+        #indicator {
+            display: inline-block;
+            text-align: center;
+            flex-basis: 40%;
+            background-color: #F7882F;
+            height: 418px;
+        }
+        #indicator h1 {
+            font-size: 2em;
+        }
+        #indicator p {
+            width: 300px;
+            font-size: 3.75em;
+            border-style: dashed;
+            margin: 100px auto;
+        }
+        /**********TUESDAY WEDNESDAY THURSDAY*********/
+        #tuesday,
+        #wednesday,
+        #thursday {
+            flex-basis: 80%;
+        }
+        .row_4 {
+            display: flex;
+        }
+        .row_2,
+        .row_3,
+        .row_4 {
+            width: 20%;
+        }
+        .hourly {
+            order: 5;
+            flex-basis: 100%;
+        }
+        section>h3 {
+            order: 4;
+            flex-basis: 80%;
+        }
+        #secondary_sum {
+            order: 3;
+            flex-basis: 80%;
+        }
+        #second_hours {
+            flex-basis: 80%;
+            margin-right: 30px;
+        }
+        .row_2>figure,
+        .row_3>figure,
+        .row_4>figure {
+            margin: auto 40px;
+        }
+        /***********RADAR***************/
+        .figure_radar {
+            margin-top: 20px;
+            margin-left: 1%;
+            margin-right: 0;
+            height: 580px;
+            display: flex;
+        }
+        .radar {
+            margin-top: 50px;
+            width: 450px;
+            height: 300px;
+        }
+        /**********Bottom********/
+        .extended,
+        .monthly,
+        .closing {
+            display: none;
+        }
+        footer {
+            border-style: solid;
+            border-top-color: cornflowerblue;
+            border-bottom-color: white;
+            border-right-color: white;
+            border-left-color: white;
+        }
 }
-
-@media screen and (min-width: 1600px)
-{
-
-}*/
