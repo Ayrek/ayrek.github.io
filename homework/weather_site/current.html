@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en-us">
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Franklin Weather </title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../css/screen.css" media="screen">
+    </head>
+
+    <body>
+        <header id="page-header">
+            <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a>.
+            </noscript>
+        </header>
+
+        <main>
+            <section class="row_1">
+                <div id="monday">
+                    <h2>Monday</h2>
+                    <p id="currentTemp">High: 90 Low: 66</p>
+                    <ul>
+                        <li id="precip"></li>
+                        <li id="wind"></li>
+                        <li id="humidity"></li>
+
+                    </ul>
+                </div>
+                <figure id="figure_sunny">
+                    <img id="sunny" alt="Monday Sunny" src="../images/franklin_weather/sunny.jpg"></figure>
+
+
+            <div class="row_last">
+                <div class="extended">Extendend Forcast</div>
+                <div class="monthly">Monthly Forcast</div>
+                <div class="closing"></div>
+            </div>
+            </section>
+            <div id="indicator">
+                <h1>Good weather for outdoor activities?</h1>
+                <p>YES</p>
+            </div>
+
+        </main>
+        <footer id="page-footer">
+            <small>Last updated: </small>
+            <small id="l_updated">Last updated: </small></footer>
+<!--
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+-->
+        <script src="scripts/weather/jquery-3.0.0.min.js"></script>
+        <script src="scripts/weather/modules.js"></script>
+        <script src="scripts/weather/remote_wu.js"></script>
+
+    </body>
+
+</html>
