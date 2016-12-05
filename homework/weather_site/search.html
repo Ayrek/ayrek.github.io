@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en-us">
+
+    <head>
+        <meta charset='utf-8'>
+        <title>Search</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/screen.css" media="screen">
+<!-- *********************************************
+* Who Did You Collaborate With On This Activity?
+* 1. Eric Keller
+* 2. David Linzey
+* 3.Alan Alberro
+* ******************************************** -->
+    </head>
+
+    <body>
+        <header id="page-header">
+            <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a>.
+            </noscript>
+        </header>
+
+        <main>
+            <section class="sbar">
+                <h1 id="title">Search for a City Below:</h1>
+                    <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                        <input type="search" name="query" id="query">
+                        <input type="submit" name="submit" value="Search" id="send">
+                    </form>
+                    <section id="searchResults">
+                        <h2 class="smallh1">Search Results</h2>
+                    </section>
+            
+            
+            </section>
+            <section class="row_1">
+                <div id="monday">
+                    <h2 id="day">Monday</h2>
+                    <p id="currentTemp"></p>
+                    <ul>
+                        <li id="hiTemp"></li>
+                        <li id="lowTemp"></li>
+                        <li id="precip"></li>
+                        <li id="wind"></li>
+                        <li id="humidity"></li>
+                    </ul>
+                </div>
+                <figure id="w_icon">
+                    <img id="sunny" alt="Monday Sunny" src="../images/franklin_weather/sunny.jpg"></figure>
+
+
+            <div class="row_last">
+                <div class="extended">Extendend Forcast</div>
+                <div class="monthly">Monthly Forcast</div>
+                <div class="closing"></div>
+            </div>
+            </section>
+            <div id="indicator">
+                <h1>Good weather for outdoor activities?</h1>
+                <p>YES</p>
+            </div>
+
+        </main>
+        <footer id="page-footer">
+            <small>Last updated: </small>
+            <small id="l_updated">Last updated: </small></footer>
+        <script
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="scripts/weather/modules.js"></script>
+        <script src="scripts/weather/search.js"></script>
+
+    </body>
+
+</html>
