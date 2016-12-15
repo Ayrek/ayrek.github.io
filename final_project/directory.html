@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Pizza Deal</title>
+        <title>Directory</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" type="text/css" href="css/layout.css">
     </head>
@@ -11,16 +11,13 @@
     <body>
         <div id="wrapper">
             <header id="page-header">
-                <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a>.
-                </noscript>
+                <noscript>JavaScript is not enabled. Please enable it to enjoy full functionality of Pizza Deal!</noscript>
             </header>
             <main>
                 <section class="sbar">
-                    <h1 id="title">Search for a Pizza Restaurant Below:</h1>
-                    <form method="get" action="" id="srchfrm">
-                        <input type="search" name="query" id="query">
-                        <input type="submit" name="submit" value="Search" id="send">
-                    </form>
+                    <h1 id="title_h1">Search for a Pizza Restaurant Below:</h1>
+                        <input type=text id="title">
+                        <button type="button" onclick="search()">Search</button>
                     <section id="searchResults">
                         <h2 class="smallh1">Search Results</h2>
                     </section>
@@ -28,8 +25,8 @@
 
                 </section>
                 <section class="row_1">
-                    <div>
-                        <h2 id="name">Business</h2>
+                    <div id="results">
+                        <h2 id="name"></h2>
                         <ul>
                             <li id="delivery"></li>
                             <li id="address"></li>
@@ -44,6 +41,7 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="modules/modules.js"></script>
+        <script type="text/javascript" src="scripts/search2.js"></script>
     </body>
 
 

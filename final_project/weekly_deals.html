@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Pizza Deal</title>
+    <title>Weekly Deals</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
 </head>
@@ -11,41 +11,42 @@
 <body>
     <div id="wrapper">
         <header id="page-header">
-            <noscript>JavaScript is not enabled. For navigation visit the <a href="sitemap.html">Site Map</a>.
-            </noscript>
+            <noscript>JavaScript is not enabled. Please enable it to enjoy full functionality of Pizza Deal!</noscript>
         </header>
-        <main>
-            <h1>Weekly Deals</h1>
+        <main id="weekly_main">
+            <h1 id="weekly_h1">Weekly Deals</h1>
             <h2 class="weekly_h2">Dominos</h2>
             <figure class="f_weekly">
-                <a href="https://www.dominos.com/en/"><img src="images/pizza_ads/dominos/599mixmatch.jpg" class="img_weekly"></a>
-            </figure>
+                <a href="https://www.dominos.com/en/"><img src="images/pizza_ads/dominos/599mixmatch.jpg" alt="dominos" class="img_weekly"></a>
+                </figure>
             <h2 class="weekly_h2">Little Ceasars</h2>
             <figure class="f_weekly">
                 <a href="http://littlecaesars.com/en-us/Store?s=12730006&v=menu">
-                    <img class="img_weekly" src="images/pizza_ads/littlecaesars/5littlecaesars.JPG"></a>
-            </figure>
+                    <img class="img_weekly" src="images/pizza_ads/littlecaesars/5littlecaesars.JPG" alt="Little Caesars"></a>
+                </figure>
             <h2 class="weekly_h2">Papa Johns</h2>
-            <figure class="f_weekly">
+            <figure class="f_weekly" id="f_papajohns">
                 <a href="https://www.papajohns.com/order/specials">
-                    <img class="f_weekly" srcset="images/pizza_ads/papa-johns/papajohns1288.jpg 1288w,
+                    <img class="f_weekly" srcset="
                     images/pizza_ads/papa-johns/papajohns1000.jpg 1000w,
+                    images/pizza_ads/papa-johns/papajohns12881.jpg 949w,
                     images/pizza_ads/papa-johns/papajohns650.jpg 650w,
-                    images/pizza_ads/papa-johns/papajohns302.jpg 302w" alt="Papa Johns"></a>
+                    images/pizza_ads/papa-johns/papajohns302.jpg 302w" 
+                        sizes="(min-width: 1400px) 50vw" alt="Papa Johns"></a>
             </figure>
             <h2 class="weekly_h2">Papa Murphys</h2>
             <figure class="f_weekly">
                 <a href="https://www.papamurphys.com/">
-                    <img class="img_weekly" srcset="images/pizza_ads/papa-murphys/8papa-murphys.JPG 1032w, images/pizza_ads/papa-murphys/8papa-murphys774.JPG 774w, images/pizza_ads/papa-murphys/8papa-murphys516.JPG 516w "></a>
+                    <img class="img_weekly" srcset="images/pizza_ads/papa-murphys/8papa-murphys.JPG 1032w, images/pizza_ads/papa-murphys/8papa-murphys774.JPG 774w, images/pizza_ads/papa-murphys/8papa-murphys516.JPG 516w " sizes="(min-width: 1400px) 50vw" alt="Papa Murphy's"></a>
             </figure>
             <h2 class="weekly_h2">Pizza Hut</h2>
             <figure class="f_weekly">
                 <a href="https://www.pizzahut.com/#/menu/deals">
-                    <img class="img_weekly" srcset="images/pizza_ads/pizza-hut/pizzahut1170.jpg 1170w, images/pizza_ads/pizza-hut/pizzahut877.jpg 877w, images/pizza_ads/pizza-hut/pizzahut438.jpg 438w"></a>
+                    <img class="img_weekly" srcset="images/pizza_ads/pizza-hut/pizzahut1170.jpg 1170w, images/pizza_ads/pizza-hut/pizzahut877.jpg 877w, images/pizza_ads/pizza-hut/pizzahut438.jpg 438w" sizes="(min-width: 1400px) 50vw" alt="Pizza Hut"></a>
             </figure>
             <h2 class="weekly_h2">Pizza Pie Cafe</h2>
             <figure class="f_weekly">
-                <img class="img_weekly" src="images/pizza_ads/pie-cafe/piecafe.jpg">
+                <img class="img_weekly" src="images/pizza_ads/pie-cafe/piecafe.jpg" alt="">
             </figure>
         </main>
 
